@@ -1,0 +1,48 @@
+.flex-container {
+  padding: 0;
+  margin-bottom: 10px;
+  list-style: none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.item {
+  background: tomato;
+  border: 1px solid navy;
+  min-width: 200px;
+  height: 150px;
+
+  /* flex: 1; */
+
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+
+.grow {
+    /* flex: 2; */
+}
+
+.grid-item {
+  background: navajowhite;
+}
+
+.grid-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
